@@ -34,8 +34,12 @@ a {
     color: inherit;
     text-decoration: none;
 }
-button, input {
+button, input, textarea {
     font: inherit;
+}
+
+img {
+    max-width: 100%;
 }
 
 .container {
@@ -209,8 +213,8 @@ button, input {
 
 .pulse {
   position: absolute;
-  width: 360px;
-  height: 360px;
+  width: min(360px, 100%);
+  aspect-ratio: 1;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(234, 29, 45, 0.18), rgba(234, 29, 45, 0.08) 35%, transparent 70%);
   filter: blur(10px);
@@ -279,6 +283,7 @@ button, input {
 
 .filters-wrap {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 18px;
 }
 
@@ -313,6 +318,7 @@ button, input {
 
 #searchInput {
   flex: 1;
+  min-width: 0;
   height: 46px;
   border: none;
   outline: none;
@@ -726,10 +732,6 @@ button, input {
 }
 
 @media (max-width: 550px) {
-  .menu {
-    display: none;
-  }
-
   .amesat-text {
     letter-spacing: 0.08em;
     font-size: 12px;
@@ -748,10 +750,51 @@ button, input {
     font-size: 15px;
   }
   .hero-card{
-    max-width: fit-content;
+    min-height: 0;
+    padding: 12px 0;
   }
-  .cta-row a{
-    max-width: max-content;
+  .pulse {
+    display: none;
+  }
+  .mini-panel {
+    width: 100%;
+    padding: 22px;
+    border-radius: 24px;
+  }
+  .stat-item {
+    flex: 1 1 120px;
+  }
+
+  .search-box {
+    min-height: 56px;
+    padding: 6px 6px 6px 12px;
+  }
+  .search-icon {
+    width: 28px;
+  }
+  .search-button {
+    min-width: 0;
+    height: 42px;
+    padding: 0 14px;
+    font-size: 0.9rem;
+  }
+  .tag {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+
+  .channel-card h3 {
+    font-size: 1.05rem;
+    line-height: 1.25;
+    margin-bottom: 4px;
+    overflow-wrap: anywhere;
+  }
+
+  .contact-block li a {
+    align-items: flex-start;
+  }
+  .footer-links a {
+    overflow-wrap: anywhere;
   }
   .mini-panel h3{
     font-size: 20px;
@@ -770,17 +813,43 @@ button, input {
   background: var(--red);
 }
 
+  .channels {
+    padding: 20px 0 36px;
+  }
+  .channels-grid {
+    gap: 12px;
+  }
   .channel-card {
-    padding: 18px;
+    min-height: 0;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 18px;
+  }
+  .channel-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+  }
+  .channel-tag {
+    padding: 6px 9px;
+    font-size: 0.66rem;
+  }
+  .channel-card p {
+    font-size: 0.88rem;
+    line-height: 1.5;
   }
 
   .channel-meta {
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 10px;
   }
 
   .channel-link {
     width: 100%;
+    height: 38px;
+    font-size: 0.9rem;
   }
 
   .btn {
@@ -793,5 +862,143 @@ button, input {
 
   .question-form button {
     width: 100%;
+  }
+}
+
+/* =====================================================
+   ADAPTATION TÉLÉPHONE / TABLETTE (ajouts)
+   ===================================================== */
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  overflow-wrap: break-word;
+  overflow-x: clip; /* filet de sécurité : jamais de défilement horizontal */
+}
+
+/* les ancres ne se cachent plus sous l'en-tête fixe */
+[id] {
+  scroll-margin-top: 96px;
+}
+
+/* appareils tactiles : pas d'effet "collé" après un tap */
+@media (hover: none) {
+  .btn:hover,
+  .channel-card:hover,
+  .social-link:hover,
+  .search-button:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+  }
+}
+
+/* Tablette : 2 colonnes pour les canaux */
+@media (min-width: 551px) and (max-width: 900px) {
+  .channels-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-brand-block {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Téléphone : en-tête sur 2 lignes avec menu défilant */
+@media (max-width: 550px) {
+  .nav {
+    min-height: 64px;
+  }
+  .logo {
+    width: 38px;
+    height: 38px;
+  }
+  .amesat {
+    gap: 10px;
+    min-width: 0;
+  }
+  /* pas de liens de navigation sur téléphone */
+  .menu {
+    display: none;
+  }
+
+  [id] {
+    scroll-margin-top: 76px;
+  }
+
+  /* zones de clic confortables (≥ 40px) */
+  .tag {
+    min-height: 40px;
+  }
+  .search-button {
+    height: 44px;
+  }
+  .channel-link {
+    height: 40px;
+  }
+  .contact-block li a {
+    min-height: 40px;
+    align-items: center;
+  }
+  .social-link {
+    width: 44px;
+    height: 44px;
+  }
+  .question-form input,
+  .question-form textarea {
+    font-size: 16px; /* évite le zoom automatique sur iPhone */
+  }
+  .question-form button {
+    min-height: 44px;
+  }
+
+  .about-box {
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .about {
+    padding-bottom: 40px;
+  }
+  .section-heading h2,
+  .about-box h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Très petits écrans (≤ 360px) */
+@media (max-width: 360px) {
+  .container {
+    width: calc(100% - 24px);
+  }
+  .hero-copy h1 {
+    font-size: 26px;
+  }
+  .amesat-text {
+    letter-spacing: 0.04em;
+  }
+  .search-button {
+    padding: 0 12px;
+  }
+}
+
+/* Téléphone en mode paysage : l'en-tête ne reste pas collé */
+@media (max-height: 500px) and (orientation: landscape) {
+  .bar {
+    position: static;
+  }
+  .hero {
+    padding-top: 32px;
   }
 }
