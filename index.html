@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portail AMESAT</title>
+        <meta name="description" content="Portail amical avec un accès rapide aux canaux Telegram."/>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/portail.css" />
+    </head>
+    <body>
+    <header class="bar">
+        <div class="container nav">
+            <div class="amesat">
+                <a href="#accueil" class="logo-link" >
+                    <img src="images/Logo_AMESAT.jpg" alt="Logo AMESAT" class="logo" />
+                </a>
+                <a href="#accueil">
+                    <span class="amesat-text">Portail Documentaire AMESAT</span>
+                </a>
+            </div>
+            <nav class="menu">
+                <a href="#accueil">Accueil</a>
+                <a href="#canaux">Nos ressources</a>
+                <a href="#a-propos">À propos</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="accueil">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <div class="eyebrow"> 
+                        <span class="trait">—</span> PORTAIL DOCUMENTAIRE AMESAT
+                    </div>
+                    <h1>Rejoignez nos canaux sur Telegram</h1>
+                    <p class="lead">Accède rapidement aux canaux officiels de l’amicale, avec de l’information, des annonces et une vraie dynamique de groupe.</p>
+                    <div class="cta-row">
+                        <a href="#canaux" class="btn btn-primary">Explorez nos ressources</a>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <strong>12+</strong>
+                            <span>Canaux</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong>100%</strong>
+                            <span>Accès rapide</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-card" >
+                    <div class="pulse"></div>
+                    <div class="mini-panel">
+                        <div class="notification">
+                            <span class="dot"></span>
+                            <p>Canal officiel</p>
+                        </div>
+                        <h3>Communauté active</h3>
+                        <ul>
+                            <li>Actualités & événements</li>
+                            <li>Échanges entre membres</li>
+                            <li>Infos utiles et annonces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="search-panel">
+            <div class="container filters-wrap">
+                <div class="search-box" role="search">
+                    <span class="search-icon" >⌕</span>
+                    <input type="search" id="searchInput" placeholder="Rechercher un canal..." />
+                    <button class="search-button" type="button">Chercher</button>
+                </div>
+                <div class="filter-group" >
+                    <button class="tag active" data-filter="all">Tous</button>
+                    <button class="tag" data-filter="licence 1">Licence 1</button> 
+                    <button class="tag" data-filter="licence 2">Licence 2</button>
+                    <button class="tag" data-filter="licence 3">Licence 3</button>
+                </div>
+            </div>
+        </section>
+        <section class="channels" id="canaux">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">NOS CANAUX</p>
+                    <h2>Découvrez les espaces de discussion</h2>
+                </div>
+                <div id="channelsGrid" class="channels-grid"></div>
+            </div>
+        </section>
+
+        <section class="about" id="a-propos">
+            <div class="container about-box">
+                <div>
+                <p class="eyebrow"><span class="trait">—</span> À PROPOS</p>
+                <h2>Plus qu'une amicale, une grande famille!</h2>
+                </div>
+                <p>L'AMESAT est une amicale engagée aux côtés des étudiants de l'UFR SAT pour les accompagner tout au long de leur parcours universitaire.
+                  Nous mettons à votre disposition ce portail afin de faciliter l'accès aux ressources pédagogiques, aux documents et aux différents canaux utiles à votre réussite.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <section class="question-section">
+      <div class="container question-box">
+        <div class="question-head">
+          <h3>Des questions ?</h3>
+          <p>Des questions ou des choses que vous ne comprenez pas ?</p>
+        </div>
+        <form class="question-form" action="mailto:diop.el-hadji-mbaye@ugb.edu.sn" method="post" enctype="text/plain">
+          <div class="form-grid">
+            <input type="text" name="Nom" placeholder="Nom" />
+            <input type="email" name="Email" placeholder="Email" />
+          </div>
+          <textarea name="Message" rows="4" placeholder="Des questions ou des choses que vous ne comprenez pas ?"></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div class="footer-brand-block">
+          <div class="amical">
+            <img src="images/Logo_AMESAT.jpg" alt="Logo AMESAT" class="footer_logo" />
+            <div class="amesat1">
+              <p class="ame">Amicale des étudiants</p>
+              <p class="ufr">de l'UFR SAT</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-links contact-block">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <a href="mailto:amesat@ugb.edu.sn">
+                <span class="contact-icon">✉</span>
+                amesat@ugb.edu.sn
+              </a>
+            </li>
+            <li>
+              <a href="tel:+237782504385">
+                <span class="contact-icon" >☎</span>
+                +221 76 768 91 86 / +221 78 138 02 70 / +221 78 250 43 85 
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="contact-icon" >⌂</span>
+                UGB, UFR SAT
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-socials">
+          <h3>Suivez-nous</h3>
+          <div class="social-list">
+            <a href="https://youtube.com/@amesattv?si=S2pvo8F_mPugOciE" class="social-link youtube" target="_blank" rel="noreferrer">
+              <img src="icons/youtube.png" alt="YouTube" class="social-icon" />
+            </a>
+            <a href="https://www.instagram.com/amesat_ugb_officiel?dlrf=aDhocXNjc2Vjd25v" class="social-link instagram" target="_blank" rel="noreferrer">
+              <img src="icons/instagram.png" alt="Instagram" class="social-icon" />
+            </a>
+            <a href="https://www.tiktok.com/@amesat_ugb?_r=1&_t=ZS-9AQK09OTbfC" class="social-link tiktok" target="_blank" rel="noreferrer">
+              <img src="icons/tiktok.png" alt="TikTok" class="social-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 AMESAT — Tous droits réservés</p>
+      </div>
+    </footer>
+
+    <script src="js/portail.js"></script>
+    </body>
+</html>
+
