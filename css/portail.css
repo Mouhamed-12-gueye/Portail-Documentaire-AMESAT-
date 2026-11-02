@@ -582,14 +582,23 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 9px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  font-size: 0.88rem;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(136, 12, 23, 0.2);
+  border: 1px solid rgba(234, 29, 45, 0.28);
+  font-size: 0.9rem;
   color: var(--white);
   flex-shrink: 0;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-block a:hover .contact-icon,
+.contact-block a:focus-visible .contact-icon {
+  transform: translateY(-2px);
+  background: var(--red);
+  border-color: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 6px 14px rgba(136, 12, 23, 0.32);
 }
 
 .social-list {
