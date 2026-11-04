@@ -3,7 +3,6 @@ const channels = [
     name: "Canal officiel AMESAT",
     category: "licence",
     badge: "Officiel",
-    icon: "📣",
     description: "Accès aux annonces, actus et ressources partagées par l’amicale de la filière.",
     link: "https://t.me/DigitalDocumentationCenter"
   },
@@ -11,7 +10,6 @@ const channels = [
     name: "Licence 1 — MASS |Semestre 1|",
     category: "licence 1",
     badge: "L1",
-    icon: "📘",
     description: "Documents, supports de cours et ressources utiles pour les étudiants en MASS.",
     link: "https://t.me/mbayedoc"
   },
@@ -19,7 +17,6 @@ const channels = [
     name: "Licence 1 — MASS |Semestre 2|",
     category: "licence 1",
     badge: "L1",
-    icon: "📘",
     description: "Documents, supports de cours et ressources utiles pour les étudiants en MASS.",
     link: "https://t.me/+xFtmRDu1roEwMWJk"
   },
@@ -27,15 +24,13 @@ const channels = [
     name: "Licence 1 — MPI |Semestre 1|",
     category: "licence 1",
     badge: "L1",
-    icon: "📘",
     description: "Espace dédié aux ressources et informations de la licence 1 en MPI.",
-    link: "https://t.me/+wjuwY9-v46cwZjU0"
+    link: "https://t.me/+AmJkWslq8b05ZmU0"
   },
   {
     name: "Licence 1 — MPI |Semestre 2|",
     category: "licence 1",
     badge: "L1",
-    icon: "📘",
     description: "Espace dédié aux ressources et informations de la licence 1 en MPI.",
     link: "https://t.me/semestre2mpi"
   },
@@ -43,7 +38,6 @@ const channels = [
     name: "Licence 2 — MASS |Semestre 3|",
     category: "licence 2",
     badge: "L2",
-    icon: "📚",
     description: "Canal de partage des documents et informations de la licence 2 en MASS.",
     link: "https://t.me/+AgGavcAJtlBmYTU0"
   },
@@ -51,7 +45,6 @@ const channels = [
     name: "Licence 2 — MPI |Semestre 3|",
     category: "licence 2",
     badge: "L2",
-    icon: "📚",
     description: "Ressources et actualités liées à la licence 2 en MPI.",
     link: "https://t.me/+xf23Dg3F7MZkMzg0"
   },
@@ -59,7 +52,6 @@ const channels = [
     name: "Licence 2 — MA |Semestre 4|",
     category: "licence 2",
     badge: "L2",
-    icon: "📚",
     description: "Documents et annonces pour les étudiants de la licence 2 en Mathématiques appliquées.",
     link: "https://t.me/semestre4ma"
   },
@@ -67,7 +59,6 @@ const channels = [
     name: "Licence 2 — Informatique |Semestre 4|",
     category: "licence 2",
     badge: "L2",
-    icon: "💻",
     description: "Canal de suivi des cours, documents et informations de la licence 2 informatique.",
     link: "https://t.me/+S2aAR4xJpChlMzE0"
   },
@@ -75,7 +66,6 @@ const channels = [
     name: "Licence 2 — PA |Semestre 4|",
     category: "licence 2",
     badge: "L2",
-    icon: "📚",
     description: "Espace d’échange pour les ressources et mises à jour de la licence 2 en PA.",
     link: "https://t.me/+9EAHDb-mOhkwOTA0"
   },
@@ -83,7 +73,6 @@ const channels = [
     name: "Licence 2 — MASS |Semestre 4|",
     category: "licence 2",
     badge: "L2",
-    icon: "📚",
     description: "Canal de partage des documents et informations de la licence 2 en MASS.",
     link: "https://t.me/+ybKJxprShKoxZjA8"
   },
@@ -91,7 +80,6 @@ const channels = [
     name: "Licence 3 — Informatique |Semestre 5|",
     category: "licence 3",
     badge: "L3",
-    icon: "💻",
     description: "Informations utiles, cours et documents pour les étudiants de licence 3 informatique.",
     link: "https://t.me/+3XFlu66gyWViMTZk"
   },
@@ -99,7 +87,6 @@ const channels = [
     name: "Licence 3 — Informatique |Semestre 6|",
     category: "licence 3",
     badge: "L3",
-    icon: "💻",
     description: "Informations utiles, cours et documents pour les étudiants de licence 3 informatique.",
     link: "https://t.me/+BIbtzwvpjiM4NTRk"
   },
@@ -107,7 +94,6 @@ const channels = [
     name: "Licence 3 — PA |Semestre 5|",
     category: "licence 3",
     badge: "L3",
-    icon: "📘",
     description: "Canal dédié aux supports, annonces et documents de la licence 3 en PA.",
     link: "https://t.me/+BrpeH7PlDFwyOTRk"
   },
@@ -115,7 +101,6 @@ const channels = [
     name: "Licence 3 — PA |Semestre 6|",
     category: "licence 3",
     badge: "L3",
-    icon: "📘",
     description: "Canal dédié aux supports, annonces et documents de la licence 3 en PA.",
     link: "https://t.me/semestre6physique"
   },
@@ -123,7 +108,6 @@ const channels = [
     name: "Licence 3 — MIAGE |Semestre 5|",
     category: "licence 3",
     badge: "L3",
-    icon: "📘",
     description: "Ressources pédagogiques et communications de la licence 3 en MIAGE.",
     link: "https://t.me/+yLtmMDwmik44ZGM0"
   },
@@ -131,7 +115,6 @@ const channels = [
     name: "Licence 3 — MIAGE |Semestre 6|",
     category: "licence 3",
     badge: "L3",
-    icon: "📘",
     description: "Ressources pédagogiques et communications de la licence 3 en MIAGE.",
     link: "https://t.me/+yLtmMDwmik44ZGM0"
   },
@@ -139,7 +122,6 @@ const channels = [
     name: "Licence 3 — MA |Semestre 5|",
     category: "licence 3",
     badge: "L3",
-    icon: "📘",
     description: "Documents et actualités pour les étudiants de licence 3 en mathématiques appliquées.",
     link: "https://t.me/+i96vkRzA_GBlMDk0"
   },
@@ -147,7 +129,6 @@ const channels = [
     name: "Licence 3 — MA |Semestre 6|",
     category: "licence 3",
     badge: "L3",
-    icon: "📘",
     description: "Documents et actualités pour les étudiants de licence 3 en mathématiques appliquées.",
     link: "https://t.me/+VUl7pcWS5z4yYmE0"
   },
@@ -155,7 +136,6 @@ const channels = [
     name: "Licence 3 — ETEL |Semestre 5|",
     category: "licence 3",
     badge: "L3",
-    icon: "📘",
     description: "Canal de partage des ressources et informations de la licence 3 ETEL.",
     link: "https://t.me/+BrpeH7PlDFwyOTRk"
   },
@@ -163,7 +143,6 @@ const channels = [
     name: "Licence 3 — ETEL |Semestre 6|",
     category: "licence 3",
     badge: "L3",
-    icon: "📘",
     description: "Canal de partage des ressources et informations de la licence 3 ETEL.",
     link: "https://t.me/semestre6physique"
   },
@@ -171,7 +150,6 @@ const channels = [
     name: "Licence 3 — MAF |Semestre 5|",
     category: "licence 3",
     badge: "L3",
-    icon: "📘",
     description: "Accès aux documents, annonces et contenus pédagogiques de la licence 3 MAF.",
     link: "https://t.me/+McW-C7ZLoG44ZGZk"
   },
@@ -179,9 +157,15 @@ const channels = [
     name: "Licence 3 — MAF |Semestre 6|",
     category: "licence 3",
     badge: "L3",
-    icon: "📘",
     description: "Accès aux documents, annonces et contenus pédagogiques de la licence 3 MAF.",
     link: "https://t.me/+mjdMQwSEuDtlY2M0"
+  }, 
+  {
+    name: "Canal pour la préparation des concours",
+    category: "concours",
+    badge: "Concours", 
+    description: "Accès aux documents et informatipns relatives aux concours.",
+    link: "https://t.me/prepaconcours02"
   }
 ];
 
@@ -194,7 +178,7 @@ let activeFilter = "all";
 function getChannelIcon(channel) {
   const text = `${channel.name} ${channel.category}`.toLowerCase();
 
-  if (text.includes("officiel") || text.includes("amesat")) return "📣";
+  if (text.includes("officiel") || text.includes("amesat") || text.includes("concours")) return "📣";
   if (text.includes("informatique") || text.includes("miage")) return "💻";
   if (text.includes("maf")) return "💰";
   if (text.includes("math") || text.includes("ma ")) return "📐";
